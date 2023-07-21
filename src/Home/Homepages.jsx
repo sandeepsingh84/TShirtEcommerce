@@ -2,8 +2,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { ArrowIcon } from "@/utils/appIcons";
 
-// import '@/Home/Home.css'
-
 const Homepages = () => {
   const [picture, setPicture] = useState("t-shirt4.png");
   const [image, setImage] = useState("");
@@ -11,7 +9,6 @@ const Homepages = () => {
   function MyTshirt(shirt) {
     setPicture(shirt);
   }
-
   return (
     <div>
       <div
@@ -130,74 +127,49 @@ const Homepages = () => {
         </div>
       </div>
 
+      {/* the right choice   */}
 
-{/* the right choice   */}
+      <div>
+        <div>
+          <p>THE RIGHT CHOICE </p>
 
+          <h1>We are the Best T-shirt Printing</h1>
+          <h1>Company in Town, Trust Us!</h1>
 
+          <p>
+            There is no easy way to be sure when clothing was first developed,
+            because it was prehistoric and clothing is perishable. One of the
+            earliest that has been found is a cloak made of the fur of
+            squirrels, from a cave in Italy, dated to 23.000 years ago.[2] Some
+            estimates come from studying the biology of lice. The body louse
+            lives in clothing, and diverged from head lice about 107,000 years
+            ago.{" "}
+          </p>
 
-<div>
+          <div>
+            <div>
+              <h1>5.200+</h1>
+              <p>Sold Goods by Product</p>
 
+              <div>
+                <h1>14K+</h1>
+                <p>Trusted by Client</p>
+              </div>
 
-<div> 
-<p>THE RIGHT CHOICE </p>
+              <div>
+                <p>Read More </p>
+                <ArrowIcon />
+              </div>
+            </div>
+          </div>
+        </div>
 
-<h1>We are the Best T-shirt Printing</h1>
-<h1>Company in Town, Trust Us!</h1>
-
-
-<p>There is no easy way to be sure when clothing was first developed, because it was prehistoric and clothing is perishable. One of the earliest that has been found is a cloak made of the fur of squirrels, from a cave in Italy, dated to 23.000 years ago.[2]
-
-Some estimates come from studying the biology of lice. The body louse lives in clothing, and diverged from head lice about 107,000 years ago. </p>
-
-
-
-<div>
-
-<div>
-  <h1>5.200+</h1>
-  <p>Sold Goods by Product</p>
-
-
-
-
-<div>
-  <h1>14K+</h1>
-<p>Trusted by Client</p>
-
-</div>
-
-
-
-<div>
-  <p>Read More </p>
-  <ArrowIcon/>
-</div>
-</div>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-
-<div>
-
-<div>
-<img src="Images/Carttt.png" />
-
-</div>
-
-
-</div>
-
-</div>
-
+        <div>
+          <div>
+            <img src="Images/Carttt.png" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
