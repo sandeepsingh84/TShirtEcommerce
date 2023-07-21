@@ -11,9 +11,10 @@ export default function Home() {
   return (
     <main>
       <Navbar/>
-      <Homepages />
+       <Homepages /> 
       {/* <Service/>
         <About/> */}
+       
     </main>
   );
 }
