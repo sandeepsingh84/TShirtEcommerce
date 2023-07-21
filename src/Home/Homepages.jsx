@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const Homepages = () => {
   const [picture, setPicture] = useState("t-shirt4.png");
-  const [image, setImage] = useState("");
+const [image, setImage] = useState("")
   console.log("picture", picture);
   function MyTshirt(shirt) {
     setPicture(shirt);
