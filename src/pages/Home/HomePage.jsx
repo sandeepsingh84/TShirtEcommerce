@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 // import '@/Home/Home.css'
 
-const Homepages = () => {
+const HomePage = () => {
   const [picture, setPicture] = useState("t-shirt4.png");
 const [image, setImage] = useState("")
   console.log("picture", picture);
@@ -127,52 +127,8 @@ const [image, setImage] = useState("")
           </div>
         </div>
       </div>
-
-      {/* onclick change photo and text  */}
-
-      <div>
-        <div>
-          <p>tshirt</p>
-          <p> jacket</p>
-          <p>shrit</p>
-        </div>
-
-        <div className="flex ">
-          <Image
-            src={{ image }}
-            width={500}
-            height={500}
-            className="w-[400px]"
-            id="big-img"
-          />
-
-          <Image
-            width={500}
-            height={500}
-            src="/Images/t-shirt4.png"
-            alt=""
-            className="w-52"
-          />
-
-          <Image
-            width={500}
-            height={500}
-            src="/Images/tshirt1.png"
-            alt=""
-            className="w-52 mt-5"
-          />
-
-          <Image
-            width={500}
-            height={500}
-            src="/Images/t-shirt2.png"
-            alt="/Images/jacket2.png"
-            className="w-52"
-          />
-        </div>
-      </div>
     </div>
   );
 };
 
-export default Homepages;
+export default HomePage;

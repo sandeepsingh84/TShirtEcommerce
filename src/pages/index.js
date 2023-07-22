@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <main>
       {/* <Navbar /> */}
-      <HomePage/>
+      <HomePage />
       <ShirtCart />
       <ImageChange />
       <Footer />
-      <SingleProduct/>
+      <SingleProduct />
 
       {/* <Service/>
         <About/> */}
