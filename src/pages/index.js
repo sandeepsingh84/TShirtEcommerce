@@ -7,6 +7,7 @@ import Navbar from "./Navbar/Navbar";
 import ShirtCart from "@/Components/ShirtCart";
 import Footer from "./Footer";
 import ImageChange from "@/Components/ImageChange";
+import SingleProduct from "./SingleProduct";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       <ShirtCart />
       <ImageChange />
       <Footer />
+      <SingleProduct/>
 
       {/* <Service/>
         <About/> */}
