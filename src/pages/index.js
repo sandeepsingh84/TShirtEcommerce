@@ -5,6 +5,8 @@ import Service from "./service/Service";
 import About from "./About";
 import Navbar from "./Navbar/Navbar";
 import ShirtCart from "@/Components/ShirtCart";
+import Footer from "./Footer";
+import ImageChange from "@/Components/ImageChange";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,8 @@ export default function Home() {
       {/* <Service/>
         <About/> */}
       <ShirtCart />
+      <ImageChange/>
+      {/* <Footer /> */}
     </main>
   );
 }

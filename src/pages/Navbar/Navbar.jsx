@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StoreIcon } from "@/utils/appIcons";
+import { CloseIcon, StoreIcon } from "@/utils/appIcons";
 
 const Navbar = () => {
   const [search, setsearch] = useState(false);
@@ -14,13 +14,13 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex justify-between " class="main">
+        <div className="flex justify-between ">
           <nav className="flex  ">
-            <ul className="flex gap-20 text-2xl font-bold font-[sans-sarif] ">
-              <li className="hover:text-blue-500 ">Home</li>
-              <li className="hover:text-blue-500">About us</li>
-              <li className="hover:text-blue-500">Contact us</li>
-              <li className="hover:text-blue-500">Shop</li>
+            <ul className="flex gap-20 text-lg font-semibold ">
+              <li className="hover:text-blue-500 h-8 border-blue-500 w-14 hover:border-b-2 hover:border-t-2 ">HOME</li>
+              <li className="hover:text-blue-500 border-blue-500 w-18 hover:border-b-2 hover:border-t-2 ">ABOUT US</li>
+              <li className="hover:text-blue-500  border-blue-500 w-18 hover:border-b-2 hover:border-t-2">CONTACT US</li>
+              <li className="hover:text-blue-500  border-blue-500 w-18 hover:border-b-2 hover:border-t-2">SHOP</li>
             </ul>
           </nav>
         </div>
@@ -51,12 +51,13 @@ const Navbar = () => {
       </div>
 
       {search && (
-        <div className="fixed backdrop-blur-lg  z-10 h-full w-full top-0 left-0 right-0 bottom-0 m-auto text-end px-24  "> 
-          <div className="fixed z-50 top-0 left-0 right-0 bottom-0 w-[40%]  shadow-2xl m-auto justify-center border rounded-2xl h-[670px] items-center ">
+        <div className="fixed backdrop-blur-sm  z-10 h-full w-full top-0 left-0 right-0 bottom-0 m-auto text-end px-24  "> 
+        <div className="flex justify-end mt-12 ml" onClick={()=>setsearch(false) } ><CloseIcon/></div>
+          <div className="fixed z-50 top-0 left-0 right-0 bottom-0 w-[40%] bg-white  shadow-2xl m-auto justify-center border rounded-2xl h-[670px] items-center ">
             <div className="w-[100%] p-5 m-auto bg-red-00  ">
               <div className=" flex justify-center rounded-xl">
                 <input
-                  className="border w-[600px] h-10 rounded-lg text-xl font-[sans-sarif] pl-6  "
+                  className="border w-[600px] bg-slate-100 h-12 rounded-md text-xl font-[sans-sarif] pl-6  "
                   type="text"
                   placeholder="serach..."
                 />
