@@ -28,6 +28,48 @@
    
   }
 
-  .main{
-    color:red;
+
+
+
+
+
+  .nav{
+    display: flex;
+    gap: 10px;
+
   }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .nav {
+      
+      display: block;
+      background-color: red;
+      margin-top: 200px;
+      width: 100%;
+      
+  }
+
+.icon{
+  width: 10px;
+  height: 10px;
+  position:sticky;
+  background-color: green;
+
+}
+
+.logo p{
+  font-size:small;
+}
+
+
+.navcontain{
+ width: 100%;
+ background-color: blue;
+}
+
+
+
+  }
+ 

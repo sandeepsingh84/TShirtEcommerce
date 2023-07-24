@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex gap-2 items-center">
             <Link href="/">
               {" "}
-              <StoreIcon />{" "}
+              <StoreIcon width={36} height={36} />{" "}
             </Link>
             <p className="text-4xl font-semibold">Store</p>
           </div>

@@ -103,7 +103,7 @@ const [image, setImage] = useState("")
           <div className="w-[50%] h-[500px] bg-red-00 m-auto">
             <iframe
               className="w-[100%] h-[100%]"
-              src="https://player.vimeo.com/video/512170000?h=64d3622777&autoplay=1&loop=1&byline=0&portrait=0"
+              // src="https://player.vimeo.com/video/512170000?h=64d3622777&autoplay=1&loop=1&byline=0&portrait=0"
               frameborder="0"
               allow="autoplay; fullscreen;"
               allowfullscreen
