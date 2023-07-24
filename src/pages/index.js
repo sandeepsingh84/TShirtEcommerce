@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <main>
       {/* <Navbar /> */}
-      <HomePage />
-      <ShirtCart />
-      <ImageChange />
-      <Footer />
-      <SingleProduct />
+      {/* <HomePage /> */}
+      {/* <ShirtCart /> */}
+      {/* <ImageChange /> */}
+      {/* <Footer /> */}
+      {/* <SingleProduct /> */}
 
-      {/* <Service/>
-        <About/> */}
+      {/* <Service/> */}
+        <About/>
     </main>
   );
 }
