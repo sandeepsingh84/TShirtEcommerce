@@ -2,12 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full'> 
+
+
 
     
-
-
-
     </div>
   )
 }

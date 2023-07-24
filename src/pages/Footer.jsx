@@ -8,7 +8,7 @@ import {
 } from "@/utils/appIcons";
 const Footer = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full mt-8 ">
       <div className="w-full bg-black h-10 "></div>
       <div className="w-full bg-purple-400 h-[670px]">
         <div className="w-full flex justify-around px-44 pt-24 ">
