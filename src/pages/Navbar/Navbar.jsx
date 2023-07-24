@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex gap-2 items-center">
             <Link href="/">
               {" "}
-              <StoreIcon />{" "}
+              <StoreIcon width={36} height={36} />{" "}
             </Link>
             <p className="text-4xl font-semibold">Store</p>
           </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
       </div>
 
       {search && (
-        <div className="fixed backdrop-blur-sm  z-10 h-full w-full top-0 left-0 right-0 bottom-0 m-auto text-end px-24  ">
+        <div className="fixed backdrop-blur-sm bg-black/70 z-10 h-full w-full top-0 left-0 right-0 bottom-0 m-auto text-end px-24  ">
           <div
             className="flex justify-end mt-12 ml"
             onClick={() => setsearch(false)}
