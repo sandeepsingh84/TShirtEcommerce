@@ -1,10 +1,30 @@
-import React from 'react'
+import { M_PLUS_Code_Latin } from "next/font/google";
+import React from "react";
 
 const About = () => {
   return (
-    <div className='w-full'> 
+    <div className="w-full mt-1">
+      <div
+        className='bg-[url("https://images.pexels.com/photos/3777727/pexels-photo-3777727.jpeg?auto=compress&cs=tinysrgb&w=5400")] 
+bg-cover bg-no-repeat h-[100vh] '
+      >
+        <div className="p-24 w-[full] h-[100vh] backdrop-blur-sm ">
+          <div className="w-[50%]">
+            <h1 className="font-semibold text-5xl font-serif">FASHION</h1>
+            <p className="mt-3 text-xl">
+              Fashion refers to anything that becomes a rage among the masses.
+              Fashion is a popular aesthetic expression. Most Noteworthy, it is
+              something that is in vogue. Fashion appears in clothing, footwear,
+              accessories, makeup, hairstyles, lifestyle, and body proportions.
+              Furthermore, Fashion is an industry-supported expression. In the
+              contemporary world, people take fashion very seriously. Fashion is
+              something that has permeated every aspect of human culture.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<p className="font-bold text-5xl text-center text-red-500 mt-32">
+      <p className="font-bold text-5xl text-center text-red-500 mt-32">
         OUR STORY
       </p>
 
@@ -34,12 +54,16 @@ const About = () => {
             </p>
             <p className="text-2xl mt-4 italic">
               Today with the support of our team we reached at the peak with thr
-              help of online platform
-              Clothing is also worn for decoration and have different beliefs and customs about what type of clothing should be worn. For many people, clothing is a status symbol. It helps people project an image. Often, clothing is a form of self-expression. Adults in different social or work situations present different views of themselves by the clothes they wear.
+              help of online platform Clothing is also worn for decoration and
+              have different beliefs and customs about what type of clothing
+              should be worn. For many people, clothing is a status symbol. It
+              helps people project an image. Often, clothing is a form of
+              self-expression. Adults in different social or work situations
+              present different views of themselves by the clothes they wear.
             </p>
           </div>
 
-          <div className='w-[30%]'>
+          <div className="w-[30%]">
             <img
               src="https://images.pexels.com/photos/5325105/pexels-photo-5325105.jpeg?auto=compress&cs=tinysrgb&w=600"
               className="w-[100%]"
@@ -52,6 +76,41 @@ const About = () => {
           </div>
         </div>
       </div>
+
+
+
+  {/* About us */}
+
+  <div className="flex justify-center px-24 mt-20">
+        <div className="w-[50%] px-10">
+          <h1 className="text-2xl font-serif font-semibold">ABOUT US </h1>
+
+          <p className="w-full mt-5">
+            An About Us page is an integral piece of content to have on your
+            website. Every single successful business has one, no matter their
+            industry or what they sell. After all, every brand has a story – and
+            your About Us page helps you tell yours. That’s important because,
+            these days, story and connection matter more than ever to customers.
+            In a Demand Gen survey, 55% of B2B buyers said content that tells a
+            strong, resonating story is what would make them most likely to talk
+            to sales. Because your About Us page is one of the first places
+            customers will look to find out about your business and story.
+          </p>
+
+          <div className="">
+            <p className="bg-black w-fit rounded-lg text-white p-2 mt-5">
+              LEARN MORE
+            </p>
+          </div>
+        </div>
+
+        <div className="w-[50%] px-10">
+          <img src="https://images.pexels.com/photos/6382989/pexels-photo-6382989.jpeg?auto=compress&cs=tinysrgb&w=5400&lazy=load" />
+        </div>
+      </div>
+
+
+
 
       <div className="flex w-full  items-center justify-center   py-12">
         <div className="w-[100%]">
@@ -68,10 +127,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all mt-20 ">
-                  <h1 className="text-3xl font-bold text-white">
-                T-SHIRT
-                  </h1>
-                  
+                  <h1 className="text-3xl font-bold text-white">T-SHIRT</h1>
                 </div>
               </div>
             </div>
@@ -89,8 +145,6 @@ const About = () => {
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all mt-20">
                   <h1 className="text-3xl font-bold text-white">SHIRT</h1>
-               
-                
                 </div>
               </div>
             </div>
@@ -107,8 +161,10 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all mt-20">
-                  <h1 className="text-3xl font-bold text-white"> THREE PIECE SUITS</h1>
-               
+                  <h1 className="text-3xl font-bold text-white">
+                    {" "}
+                    THREE PIECE SUITS
+                  </h1>
                 </div>
               </div>
             </div>
@@ -138,9 +194,18 @@ const About = () => {
       </div>
 
 
+
+
+
+      {/* OUR QUALITIES */}
+
+
+
+
+
     
     </div>
-  )
-}
+  );
+};
 
 export default About;

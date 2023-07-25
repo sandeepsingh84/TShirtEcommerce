@@ -126,7 +126,27 @@ const [image, setImage] = useState("")
             </div>
           </div>
         </div>
+
+
+
       </div>
+
+
+
+
+
+
+
+{/* Swiper loop  */}
+
+
+
+
+
+  
+
+
+
     </div>
   );
 };

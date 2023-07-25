@@ -8,6 +8,8 @@ import ShirtCart from "@/Components/ShirtCart";
 import Footer from "./Footer";
 import ImageChange from "@/Components/ImageChange";
 import SingleProduct from "./SingleProduct";
+import Mobilenavbar from "./Navbar/Mobilenavbar";
+import Swiperloop from "@/Components/Swiperloop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +22,10 @@ export default function Home() {
       {/* <ImageChange /> */}
       {/* <Footer /> */}
       {/* <SingleProduct /> */}
-
+<Swiperloop/>
       {/* <Service/> */}
-        <About/>
+        {/* <About/> */}
+        {/* <Mobilenavbar/> */}
     </main>
   );
 }
