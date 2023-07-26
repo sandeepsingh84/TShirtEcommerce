@@ -16,13 +16,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      {/* <Navbar /> */}
-      {/* <HomePage /> */}
+  
       {/* <ShirtCart /> */}
       {/* <ImageChange /> */}
-      {/* <Footer /> */}
+  
       {/* <SingleProduct /> */}
-<Swiperloop/>
+{/* <Swiperloop/> */}
+
+{/* <HomePage/> */}
+
       {/* <Service/> */}
         {/* <About/> */}
         {/* <Mobilenavbar/> */}

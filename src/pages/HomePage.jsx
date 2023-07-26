@@ -14,7 +14,7 @@ const [image, setImage] = useState("")
     <div>
       <div
         className="bg-gradient-to-r from-blue-300 to-fuchsia-300 px-32   w-full h-[850px]"
-        class="main"
+       
       >
         <div className="flex justify-center w-full m-auto">
           <div>

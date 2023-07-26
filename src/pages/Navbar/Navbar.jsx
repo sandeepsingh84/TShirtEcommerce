@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="w-full flex items-center h-16 justify-between px-16 shadow-md">
         <div className="flex">
           <div className="flex gap-2 items-center">
-            <Link href="/Home">
+            <Link href="/HomePage">
               {" "}
               <StoreIcon width={36} height={36} />{" "}
             </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex justify-between ">
           <nav className="flex  ">
             <ul className="flex gap-20 text-lg font-semibold ">
-              <Link href="/Home">
+              <Link href="/HomePage">
                 {" "}
                 <li className="hover:text-blue-500 h-8 border-blue-500 w-14 hover:border-b-2 hover:border-t-2 ">
                   HOME
