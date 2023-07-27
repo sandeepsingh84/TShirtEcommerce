@@ -3,6 +3,7 @@ import React from "react";
 const ShirtCart = () => {
   return (
     <div className="w-full px-28 h-[100vh] border">
+  
       <div className="flex  ">
         <div className="w-[50%] pl-20">
           <div className="flex">

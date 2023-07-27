@@ -1,14 +1,13 @@
-import { M_PLUS_Code_Latin } from "next/font/google";
 import React from "react";
 
 const About = () => {
   return (
     <div className="w-full mt-1">
       <div
-        className='bg-[url("https://images.pexels.com/photos/3777727/pexels-photo-3777727.jpeg?auto=compress&cs=tinysrgb&w=5400")] 
+        className='bg-[url("https://images.pexels.com/photos/9594677/pexels-photo-9594677.jpeg?auto=compress&cs=tinysrgb&w=5400")] 
 bg-cover bg-no-repeat h-[100vh] '
       >
-        <div className="p-24 w-[full] h-[100vh] backdrop-blur-sm ">
+        <div className="p-24 w-[full] ">
           <div className="w-[50%]">
             <h1 className="font-semibold text-5xl font-serif">FASHION</h1>
             <p className="mt-3 text-xl">
@@ -83,9 +82,9 @@ bg-cover bg-no-repeat h-[100vh] '
 
   <div className="flex justify-center px-24 mt-20">
         <div className="w-[50%] px-10">
-          <h1 className="text-2xl font-serif font-semibold">ABOUT US </h1>
+          <h1 className="text-5xl font-serif font-semibold">ABOUT US </h1>
 
-          <p className="w-full mt-5">
+          <p className="w-full text-xl mt-5">
             An About Us page is an integral piece of content to have on your
             website. Every single successful business has one, no matter their
             industry or what they sell. After all, every brand has a story – and
@@ -97,15 +96,15 @@ bg-cover bg-no-repeat h-[100vh] '
             customers will look to find out about your business and story.
           </p>
 
-          <div className="">
-            <p className="bg-black w-fit rounded-lg text-white p-2 mt-5">
+          <div className=" shadow-2xl w-fit">
+            <p className="bg-black w-fit rounded-lg text-white p-2 mt-20 ">
               LEARN MORE
             </p>
           </div>
         </div>
 
-        <div className="w-[50%] px-10">
-          <img src="https://images.pexels.com/photos/6382989/pexels-photo-6382989.jpeg?auto=compress&cs=tinysrgb&w=5400&lazy=load" />
+        <div className="w-[50%] px-10 ">
+          <img src="https://images.pexels.com/photos/6382989/pexels-photo-6382989.jpeg?auto=compress&cs=tinysrgb&w=5400&lazy=load"  className="rounded-xl shadow-lg"/>
         </div>
       </div>
 

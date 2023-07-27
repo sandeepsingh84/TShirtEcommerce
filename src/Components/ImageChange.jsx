@@ -15,7 +15,7 @@ const ImageChange = () => {
         />
       </div>
 
-      <h1 class={styles.main}>hlooo</h1>
+     
     </div>
   );
 };
