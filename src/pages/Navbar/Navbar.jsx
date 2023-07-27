@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import { CloseIcon, StoreIcon } from "@/utils/appIcons";
 import Link from "next/link";
 
 const Navbar = () => {
   const [search, setsearch] = useState(false);
-  const [LoginModel, setLoginModel] = useState(false)
+  const [LoginModel, setLoginModel] = useState(false);
 
   return (
     <div className="w-full relative">
@@ -88,7 +87,6 @@ const Navbar = () => {
             />
           </div> */}
 
-          
           {/* {LoginModel && (
             <div onMouseMove={()=> setLoginModel(true)} onMouseLeave={()=> setLoginModel(false)} className="  z-50 top-28 left-96 bottom-0 right-0 bg-black  ">
 
@@ -98,62 +96,63 @@ const Navbar = () => {
             </div>
           )} */}
 
-<div className="">
-          <button>
-            <a href=" #">
-              
-           <div onClick={()=>{
-
-            setLoginModel(true)
-
-
-
-          }}>
-            <img
-              className = "w-10 h-10 relative"
-              src="https://www.prosportsinn.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.0920907a.png&w=640&q=75"
-            />
-          </div> 
-
-            </a>
-
-            {LoginModel && (
-              <div
-                onMouseMove={() => setLoginModel(true)}
-                onMouseLeave={() => setLoginModel(false)}
-                className="border absolute bg-white text-black text-center m-auto rounded-md top-14  right-10  justify-start  backdrop-blur-sm z-50"
-              >
-                <div className=" m-auto z-50   h-fit w-[150px] right-0  ">
-                  <a href="/CartItems">
-                    {" "}
-                    <div className="border-b py-2   italic text-md  rounded-tl-lg  hover:bg-purple-300 ">
-                      <p className="">Add to Cart </p>
-                    </div>{" "}
-                  </a>
-
-                  <a href="/WishList">
-                    {" "}
-                    <p className="border-b py-2 italic text-md hover:bg-purple-200    ">
-                      Wishlist
-                    </p>
-                  </a>
-                  <a href="/MyOrder">
-                    <p className="border-b py-2  italic text-md hover:bg-purple-200 text-center ">
-                      My Order
-                    </p>
-                  </a>
-                  <p className="border-b py-2  italic text-md hover:bg-purple-200  rounded-br-lg rounded-bl-lg ">
-                    Log Out
-                  </p>
+          <div className="">
+            <button>
+              <a href=" #">
+                <div
+                  onClick={() => {
+                    setLoginModel(true);
+                  }}
+                >
+                  <img
+                    className="w-10 h-10 relative"
+                    src="https://www.prosportsinn.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.0920907a.png&w=640&q=75"
+                  />
                 </div>
-              </div>
-            )}
-          </button>
-        </div>
+              </a>
 
+              {LoginModel && (
+                <div
+                  onMouseMove={() => setLoginModel(true)}
+                  onMouseLeave={() => setLoginModel(false)}
+                  className="border absolute bg-white text-black text-center m-auto rounded-md top-14  right-10  justify-start  backdrop-blur-sm z-50"
+                >
+                  <div className=" m-auto z-50   h-fit w-[150px] right-0  ">
+                    <a href="/CartItems">
+                      {" "}
+                      <div className="border-b py-2   italic text-md  rounded-tl-lg  hover:bg-purple-300 ">
+                        <p className="">Add to Cart </p>
+                      </div>{" "}
+                    </a>
 
+                    <a href="/WishList">
+                      {" "}
+                      <p className="border-b py-2 italic text-md hover:bg-purple-200    ">
+                        Wishlist
+                      </p>
+                    </a>
+                    <a href="/MyOrder">
+                      <p className="border-b py-2  italic text-md hover:bg-purple-200 text-center ">
+                        My Order
+                      </p>
+                    </a>
+                    <p className="border-b py-2  italic text-md hover:bg-purple-200  rounded-br-lg rounded-bl-lg ">
+                      Log Out
+                    </p>
+                  </div>
+                </div>
+              )}
+            </button>
+          </div>
 
-
+          <Link href="/SignIn">
+            {" "}
+            <div>
+              <button className="text-white py-4 px-6 rounded-md font-[sans-sarif] bg-yellow-400  text-xl">
+                Sign In
+              </button>
+            </div>{" "}
+          </Link>
         </div>
       </div>
 

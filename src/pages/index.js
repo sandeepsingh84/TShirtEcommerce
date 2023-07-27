@@ -12,6 +12,9 @@ import ImageChange from "@/Components/ImageChange";
 import SingleProduct from "./SingleProduct";
 import Mobilenavbar from "./Navbar/Mobilenavbar";
 import Swiperloop from "@/Components/Swiperloop";
+
+import CreateOtp from "@/Components/CreateOtp";
+import Signup from "@/Components/Signup";
 import SignIn from "./SignIn";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,17 +22,16 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      {/* <Navbar /> */}
-      {/* <HomePage /> */}
-      {/* <ShirtCart /> */}
-      {/* <ImageChange /> */}
-      {/* <Footer /> */}
+
+      {/* <CreateOtp/> */}
+      {/* <SignIn/> */}
+
+{/* <Signup/>  */}
       {/* <SingleProduct /> */}
-{/* <Swiperloop/> */}
-<SignIn/>
-      {/* <Service/> */}
-        {/* <About/> */}
-        {/* <Mobilenavbar/> */}
+      {/* <Swiperloop /> */}
+      {/* <Service /> */}
+    
+      {/* <Mobilenavbar/> */}
     </main>
   );
 }
