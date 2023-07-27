@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <div className="flex justify-between ">
           <nav className="flex  ">
-            <ul className="flex gap-20 text-lg font-semibold ">
+            <ul className="flex gap-20 text-xl font-semibold ">
               <Link href="/HomePage">
                 {" "}
                 <li className="hover:text-blue-500 h-8 border-blue-500 w-14 hover:border-b-2 hover:border-t-2 ">
