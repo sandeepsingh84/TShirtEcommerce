@@ -4,9 +4,9 @@ import React from 'react'
 
 const Signup = () => {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center '>
     <div className='w-[50%] '>
-<img src='ref-shirt.png' />
+<img src='ref-shirt.png' className=' w-[90%]' />
    </div>
 
 
