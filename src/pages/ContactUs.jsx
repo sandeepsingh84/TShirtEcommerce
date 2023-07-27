@@ -169,7 +169,7 @@ const ContactUs = () => {
               <div className="mt-10">
                 {" "}
                 <input
-                  className="bg-blue-300 rounded-md text-white text-lg h-14 w-44"
+                  className="bg-blue-400 rounded-md text-white font-semibold text-xl h-14 w-44"
                   type="submit"
                   name=""
                   id=""
