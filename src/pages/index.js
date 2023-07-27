@@ -12,22 +12,22 @@ import ImageChange from "@/Components/ImageChange";
 import SingleProduct from "./SingleProduct";
 import Mobilenavbar from "./Navbar/Mobilenavbar";
 import Swiperloop from "@/Components/Swiperloop";
-import Signup from "@/Components/Signup";
-import CreateOtp from "@/Components/CreateOtp";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <Signup/>
-      <CreateOtp/>
- 
+      {/* <Navbar /> */}
+      {/* <HomePage /> */}
+      {/* <ShirtCart /> */}
+      {/* <ImageChange /> */}
+      {/* <Footer /> */}
       {/* <SingleProduct /> */}
-      {/* <Swiperloop /> */}
-      {/* <Service /> */}
-    
-      {/* <Mobilenavbar/> */}
+<Swiperloop/>
+      {/* <Service/> */}
+        {/* <About/> */}
+        {/* <Mobilenavbar/> */}
     </main>
   );
 }
