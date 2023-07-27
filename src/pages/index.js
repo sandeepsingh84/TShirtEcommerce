@@ -10,6 +10,7 @@ import ImageChange from "@/Components/ImageChange";
 import SingleProduct from "./SingleProduct";
 import Mobilenavbar from "./Navbar/Mobilenavbar";
 import Swiperloop from "@/Components/Swiperloop";
+import SignIn from "./SignIn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +23,10 @@ export default function Home() {
   
       {/* <SingleProduct /> */}
 {/* <Swiperloop/> */}
+<SignIn/>
 
 {/* <HomePage/> */}
+{/* <SingleProduct/> */}
 
       {/* <Service/> */}
         {/* <About/> */}

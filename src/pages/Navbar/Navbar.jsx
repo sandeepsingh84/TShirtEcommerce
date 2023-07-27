@@ -4,9 +4,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [search, setsearch] = useState(false);
+  const [LoginModel, setLoginModel] = useState(false)
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <div className="w-full flex items-center h-16 justify-between px-16 shadow-md">
         <div className="flex">
           <div className="flex gap-2 items-center">
@@ -57,7 +58,7 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center ">
           <div>
             <img
               class="w-10 h-10"
@@ -73,12 +74,85 @@ const Navbar = () => {
           <div>
             <img class="w-10 h-10" src="/like.png" />
           </div>
-          <div>
+          {/* <div onClick={()=>{
+
+            setLoginModel(true)
+
+
+
+          }}>
             <img
-              class="w-10 h-10"
+              className = "w-10 h-10 relative"
               src="https://www.prosportsinn.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.0920907a.png&w=640&q=75"
             />
-          </div>
+          </div> */}
+
+          
+          {/* {LoginModel && (
+            <div onMouseMove={()=> setLoginModel(true)} onMouseLeave={()=> setLoginModel(false)} className="  z-50 top-28 left-96 bottom-0 right-0 bg-black  ">
+
+              <div className="z-50 h-56 w-56 top-0 left-0  bottom-0 right-0"></div>
+
+
+            </div>
+          )} */}
+
+<div className="">
+          <button>
+            <a href=" #">
+              
+           <div onClick={()=>{
+
+            setLoginModel(true)
+
+
+
+          }}>
+            <img
+              className = "w-10 h-10 relative"
+              src="https://www.prosportsinn.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.0920907a.png&w=640&q=75"
+            />
+          </div> 
+
+            </a>
+
+            {LoginModel && (
+              <div
+                onMouseMove={() => setLoginModel(true)}
+                onMouseLeave={() => setLoginModel(false)}
+                className="border absolute bg-white text-black text-center m-auto rounded-md top-14  right-10  justify-start  backdrop-blur-sm z-50"
+              >
+                <div className=" m-auto z-50   h-fit w-[150px] right-0  ">
+                  <a href="/CartItems">
+                    {" "}
+                    <div className="border-b py-2   italic text-md  rounded-tl-lg  hover:bg-purple-300 ">
+                      <p className="">Add to Cart </p>
+                    </div>{" "}
+                  </a>
+
+                  <a href="/WishList">
+                    {" "}
+                    <p className="border-b py-2 italic text-md hover:bg-purple-200    ">
+                      Wishlist
+                    </p>
+                  </a>
+                  <a href="/MyOrder">
+                    <p className="border-b py-2  italic text-md hover:bg-purple-200 text-center ">
+                      My Order
+                    </p>
+                  </a>
+                  <p className="border-b py-2  italic text-md hover:bg-purple-200  rounded-br-lg rounded-bl-lg ">
+                    Log Out
+                  </p>
+                </div>
+              </div>
+            )}
+          </button>
+        </div>
+
+
+
+
         </div>
       </div>
 
