@@ -1,10 +1,12 @@
-import Image from "next/image";
 import React, { useState } from "react";
+import ImageChange from "@/Components/ImageChange";
+import ShirtCart from "@/Components/ShirtCart";
+import Image from "next/image";
 // import '@/Home/Home.css'
 
 const HomePage = () => {
   const [picture, setPicture] = useState("t-shirt4.png");
-const [image, setImage] = useState("")
+  const [image, setImage] = useState("");
   console.log("picture", picture);
   function MyTshirt(shirt) {
     setPicture(shirt);
@@ -12,10 +14,7 @@ const [image, setImage] = useState("")
 
   return (
     <div>
-      <div
-        className="bg-gradient-to-r from-blue-300 to-fuchsia-300 px-32   w-full h-[850px]"
-       
-      >
+      <div className="bg-gradient-to-r from-blue-300 to-fuchsia-300 px-32   w-full h-[850px]">
         <div className="flex justify-center w-full m-auto">
           <div>
             <h1 className="text-2xl mt-20 text-white font-semibold ">
@@ -99,24 +98,24 @@ const [image, setImage] = useState("")
           Styles Clothes
         </div>
 
-        <div className="flex pt-24   justify-center  w-[100%] m-auto bg-sky-100">
+        <div className="flex pt-24   justify-center items-center  w-[100%] m-auto">
           <div className="w-[50%] h-[500px] bg-red-00 m-auto">
             <iframe
               className="w-[100%] h-[100%]"
-              // src="https://player.vimeo.com/video/512170000?h=64d3622777&autoplay=1&loop=1&byline=0&portrait=0"
+              src="https://player.vimeo.com/video/512170000?h=64d3622777&autoplay=1&loop=1&byline=0&portrait=0"
               frameborder="0"
               allow="autoplay; fullscreen;"
               allowfullscreen
             ></iframe>
           </div>
 
-          <div className="w-[35%]">
+          <div className="w-[35%] font-serif">
             <div>
-              <p className="text-2xl font-semibold ">Clothes</p>
+              <p className="text-5xl  font-semibold ">Clothes</p>
             </div>
 
-            <div className="w-[70%]">
-              <p className="text-xl">
+            <div className="w-[70%] mt-10">
+              <p className="text-2xl ">
                 Clothing are items used to cover the human body. Humans are the
                 only animals that wear clothing. During the many thousands of
                 years between losing body hair and learning to make clothes,
@@ -126,27 +125,11 @@ const [image, setImage] = useState("")
             </div>
           </div>
         </div>
-
-
-
       </div>
 
-
-
-
-
-
-
-{/* Swiper loop  */}
-
-
-
-
-
-  
-
-
-
+      {/* Swiper loop  */}
+      <ShirtCart />
+      <ImageChange />
     </div>
   );
 };
