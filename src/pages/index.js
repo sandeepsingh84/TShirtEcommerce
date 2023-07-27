@@ -16,6 +16,7 @@ import Swiperloop from "@/Components/Swiperloop";
 import CreateOtp from "@/Components/CreateOtp";
 import Signup from "@/Components/Signup";
 import SignIn from "./SignIn";
+import Swipercode from "@/Components/Swipercode";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +24,13 @@ export default function Home() {
   return (
     <main>
 
-      <CreateOtp/>
-      <SignIn/>
+      {/* <CreateOtp/> */}
+      {/* <SignIn/> */}
 
-<Signup/> 
+{/* <Signup/>  */}
       {/* <SingleProduct /> */}
-      {/* <Swiperloop /> */}
+      <Swiperloop />
+      {/* <Swipercode/> */}
       {/* <Service /> */}
     
       {/* <Mobilenavbar/> */}
