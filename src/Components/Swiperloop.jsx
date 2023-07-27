@@ -67,7 +67,7 @@ const list = [
 ];
 
 const Swiperloop = () => {
-  const [Data, setData] = useState(list);
+  
   return (
     <div className="px-20">
    
